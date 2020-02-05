@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Normilize css -->
+    <!-- <script src="https://kit.fontawesome.com/99f0fe5b82.js" crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"
+        integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+    <!-- My styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800&display=swap&subset=cyrillic"
+        rel="stylesheet">
+
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar-right navbar navbar-expand-md navbar-dark fixed-top p-0 flex-column" id="navbar">
+        <div class="container">
+            <a class="navbar-brand p-0 m-0" href="#">
+                <div class="position-relative d-flex">
+                    <img class="position-relative" src="images/Rectangle_10.png" alt="">
+                    <img class="logo_above" src="images/Layer_18.png" alt="">
+                    <p class="slogan">FORTITUDINE <br> ET CONSTANTIA</p>
+                </div>
+            </a>
+
+            <button class="btn btn-link p-2" type="button" data-toggle="modal" data-target="#fullHeightModalRight">
+                <i class="fas fa-bars fa-2x white-text hamburger"></i>
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- SIDEBAR -->
+    <div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-full-height modal-right" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header white-text border-0">
+                    <h4 class="modal-title m-md-4 white-text w-100" id="myModalLabel">
+                        <a class="btn-link white-text" href="">en </a>|<a class="white-text btn-link" href=""> de</a>
+                        <button type="button" class="close float-right " data-dismiss="modal" aria-label="Close">
+                            <span class="white-text h1" aria-hidden="true">&times;</span>
+                        </button>
+                    </h4>
+                </div>
+
+                <!-- ACCORDION -->
+                <div class="modal-body ">
+                    <div class="accordion" id="accordionExample">
+                        <a class="list-group-item menu_card_header white-text" href="">HOME</a>
+
+                        <div class="card z-depth-0 border-0 menu_card_header">
+                            <div class="card-header border-0 white-text menu_card_header" id="headingOne">
+                                <h5 class="mb-0 ">
+                                    <a class="white-text " href="">Services</a>
+                                    <button class="btn btn-link white-text py-0 px-3 my-0" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <i class="fas fa-angle-down fa-2x hamburger"></i>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul class="list-group menu_card_header white-text counter">
+                                        <a class="list-group-item menu_card_header white-text p-1" href="">Sales of
+                                            natural
+                                            gas</a>
+                                        <a class="list-group-item menu_card_header white-text p-1"
+                                            href="">Transportation of
+                                            natural gas</a>
+                                        <a class="list-group-item menu_card_header white-text p-1" href="">Sales of
+                                            LPG</a>
+
+                                        <a class="list-group-item menu_card_header white-text p-1" href="">Sales of
+                                            LPG</a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="list-group-item menu_card_header white-text" href="">ABOUT US</a>
+                        <a class="list-group-item menu_card_header white-text" href="">CONTACTS</a>
+
+                    </div>
+                    <p class="menu_futer m-4">
+                        Our address <br>
+                        Schottenring 16/2, Regus Stock Exchange,<br>
+                        1010 Vienna
+                    </p>
+                    <p class="menu_futer m-4">
+                        Hotline <br>
+                        pavlo.chavdar@adlerenergy.at, <br>
+                        9:00 to 18:00 (no days off)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+   <!-- SLIDER -->
+   <header>
+    <div class="container p-0">
+        <div class="custom_slider_dots position-relative"></div>
+    </div>
+    <div class="single_items m-0">
+        <div class="header_slide bg_center" style="background-image: url('images/first_slide.png');">
+            <div class="slide_cuption container">
+                <div class="col-md-5 col"></div>
+                <h1 class="slider_title">Transportation</h1>
+                <h2 class="slider_subtitle">of naturale gas</h2>
+                <p class="slider_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean </p>
+            </div>
+        </div>
+
+        <div class="header_slide bg_center" style="background-image: url('images/first_slide.png');">
+            <div class=" slide_cuption container">
+                <div class="col-md-5 col"></div>
+                <h1 class="slider_title">Transportation</h1>
+                <h2 class="slider_subtitle">of naturale gas</h2>
+                <p class="slider_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean </p>
+            </div>
+        </div>
+
+        <div class="header_slide bg_center" style="background-image: url('images/first_slide.png');">
+            <div class=" slide_cuption container">
+                <div class="col-md-5 col"></div>
+                <h1 class="slider_title">Transportation</h1>
+                <h2 class="slider_subtitle">of naturale gas</h2>
+                <p class="slider_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean </p>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <noscript>Please enable Javascript in your browser to get the best experience possible when using our
+        website.</noscript>
+
+        
+
+    <section class="grey lighten-4">
+        <div class="bg_center" style="background-image: url('images/bg.png');">
+            <div class="container p-0">
+                <div class="row m-0 pages ">
+                    <a class="col-md page bg_center">
+                        <div class="page_mask">
+                            <div class="page_title">Service</div>
+                        </div>
+                    </a>
+
+                    <a class="col-md page bg_center">
+                        <div class="page_mask">
+                            <div class="page_title">About us</div>
+                        </div>
+                    </a>
+
+                    <a class="col-md page bg_center">
+                        <div class="page_mask">
+                            <div class="page_title">Contacts</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- PARTNERS SLIDER -->
+
+            <div class="container" >
+                <div class="multiple-items">
+                    <div class="slide__item flex_center">
+                        <img src="images/partners/Layer_24.png" alt="" style="width: 80%;">
+                    </div>
+                    <div class="slide__item flex_center">
+                        <img src="images/partners/Layer_25.png" alt="" style="width: 80%;">
+                    </div>
+                    <div class="slide__item flex_center">
+                        <img src="images/partners/Layer_26.png" alt="" style="width: 80%;">
+                    </div>
+                    <div class="slide__item flex_center">
+                        <img src="images/partners/Layer_27.png" alt="" style="width: 80%;">
+                    </div>
+                    <div class="slide__item flex_center">
+                        <img src="images/partners/Layer_28.png" alt="" style="width: 80%;">
+                    </div>
+                    <div class="slide__item flex_center">
+                        <img src="images/partners/Layer_29.png" alt="" style="width: 80%;">
+                    </div>
+                    <div class="slide__item flex_center">
+                        <img src="images/partners/Layer_24.png" alt="" style="width: 80%;">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- SERVICES TABS -->
+            <div class="container-fluid p-0">
+                <div class="row m-0 p-0">
+                    <div class="col-md-4 col-lg-2 offset-lg-2">
+                        <ul class="nav flex-md-column white row" id="myTab" role="tablist">
+
+                            <li class="nav-item py-3 px-md-0 col-6 col-md flex-column flex-center">
+                                <div class="view overlay ml-lg-n4">
+
+                                    <img class="img-fluid" src="images/Layer_51.png" alt="">
+                                    <div class="mask flex-center"
+                                        style="background-color: rgba(201, 37, 53, 0.77); border-radius: 0 10px ;">
+                                        <img src="images/Shape_8_copy.svg" alt="">
+                                    </div>
+                                </div>
+
+                                <a class="nav-link active title" id="home-tab" data-toggle="tab" href="#tab_1"
+                                    role="tab" aria-controls="home" aria-selected="true">Natural
+                                    gas selling</a>
+                            </li>
+
+                            <li class="nav-item  py-3 px-md-0 col-6 col-md flex-column flex-center">
+                                <div class="view overlay ml-lg-n4">
+
+                                    <img class="img-fluid " src="images/Layer_53.png" alt="">
+                                    <div class="mask flex-center"
+                                        style="background-color: rgba(201, 37, 53, 0.77); border-radius: 0 10px ;">
+                                        <img src="images/Shape_8_copy.svg" alt="">
+                                    </div>
+                                </div>
+                                <a class="nav-link title" id="profile-tab" data-toggle="tab" href="#tab_2" role="tab"
+                                    aria-controls="profile" aria-selected="false">LPG
+                                    selling</a>
+                            </li>
+
+                            <li class="nav-item  py-3 px-md-0 col-6 col-md flex-column flex-center">
+                                <div class="view overlay ml-lg-n4">
+
+                                    <img class="img-fluid " src="images/Layer_54.png" alt="">
+                                    <div class="mask flex-center"
+                                        style="background-color: rgba(201, 37, 53, 0.77); border-radius: 0 10px ;">
+                                        <img src="images/Shape_8_copy.svg" alt="">
+                                    </div>
+                                </div>
+                                <a class="nav-link title" id="contact-tab" data-toggle="tab" href="#tab_3" role="tab"
+                                    aria-controls="contact" aria-selected="false">Liquefied natural
+                                    gas LNG selling</a>
+                            </li>
+
+                            <li class="nav-item  py-3 px-md-0 col-6 col-md flex-column flex-center">
+                                <div class="view overlay ml-lg-n4 ">
+
+                                    <img class="img-fluid " src="images/Layer_51.png" alt="">
+                                    <div class="mask flex-center"
+                                        style="background-color: rgba(201, 37, 53, 0.77); border-radius: 0 10px ;">
+                                        <img src="images/Shape_8_copy.svg" alt="">
+                                    </div>
+                                </div>
+                                <a class="nav-link title" id="contact-tab" data-toggle="tab" href="#tab_4" role="tab"
+                                    aria-controls="contact" aria-selected="false">Electroenergy
+                                    sale</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- SERVICES DISCRIPTION -->
+                    <div class="col white px-md-5 ">
+                        <div class="tab-content pl-md-5 pb-5" id="myTabContent">
+                            <div class="tab-pane fade show active" id="tab_1" role="tabpanel"
+                                aria-labelledby="home-tab">
+                                <h3 class="categories_slogan my-5">Natural gas selling</h3>
+
+                                <p class="text"> Raw denim you
+                                    probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua,
+                                    retro
+                                    synth master
+                                    cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
+                                    butcher retro
+                                    keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex
+                                    squid. Aliquip
+                                    placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher
+                                    voluptate nisi
+                                    qui.</p>
+                            </div>
+                            <div class="tab-pane fade" id="tab_2" role="tabpanel" aria-labelledby="profile-tab">
+                                <h3 class="categories_slogan my-5">LPG
+                                    selling</h3>
+                                <p class="text">Food
+                                    truck fixie
+                                    locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation
+                                    +1
+                                    labore velit,
+                                    blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table
+                                    craft beer twee.
+                                    Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts
+                                    ullamco
+                                    ad vinyl cillum
+                                    PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar
+                                    helvetica VHS
+                                    salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum
+                                    wes
+                                    anderson 8-bit,
+                                    sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art
+                                    party
+                                    scenester
+                                    stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="tab_3" role="tabpanel" aria-labelledby="contact-tab">
+                                <h3 class="categories_slogan my-5">Liquefied natural
+                                    gas LNG selling</h3>
+                                <p class="text">Etsy
+                                    mixtape
+                                    wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo
+                                    retro
+                                    fanny pack
+                                    lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer,
+                                    iphone skateboard
+                                    locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony.
+                                    Leggings gentrify
+                                    squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles
+                                    pitchfork
+                                    biodiesel fixie
+                                    etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them,
+                                    vinyl
+                                    craft beer blog
+                                    stumptown. Pitchfork sustainable tofu synth chambray yr.
+
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="tab_4" role="tabpanel" aria-labelledby="contact-tab">
+                                <h3 class="categories_slogan my-5">Electroenergy
+                                    sale</h3>
+                                <p class="text">Etsy
+                                    mixtape
+                                    wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo
+                                    retro
+                                    fanny pack
+                                    lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer,
+                                    iphone skateboard
+                                    locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony.
+                                    Leggings gentrify
+                                    squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles
+                                    pitchfork
+                                    biodiesel fixie
+                                    etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them,
+                                    vinyl
+                                    craft beer blog
+                                    stumptown. Pitchfork sustainable tofu synth chambray yr.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md white px-0 py-3 py-md-5 d-none d-lg-block">
+                        <img class="img-fluid" src="images/Layer_55.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- BENEFITS -->
+    <section class="grey lighten-4" style="margin-top: -100px; ">
+        <img class="img-fluid w-100" style="min-height: 400px;" src="images/Layer_56.png" alt="">
+        <div class="container p-0">
+            <div class="row mx-0 p-0" style="margin-top: -200px;">
+                <div class="col-md white mx-3 mb-5 px-md-4" style="min-height: 300px;">
+                    <h5 class="title my-5">Benefit name <img class="float-right" src="images/Shape_7.svg" alt=""></h5>
+                    <p class="text">
+                        Uninterrupted supply of petroleum products
+                    </p>
+                </div>
+                <div class="col-md white mx-3 mb-5 px-md-4" style="min-height: 300px;">
+                    <h5 class="title my-5">Benefit name<img class="float-right" src="images/Shape_8.svg" alt=""></h5>
+                    <p class="text">
+                        We offer convenient forms of contractual agreements. Our customers always are satisfied with our
+                        cooperation
+                    </p>
+                </div>
+                <div class="col-md white mx-3 mb-5 px-md-4" style="min-height: 300px;">
+                    <h5 class="title my-5">Benefit name<img class="float-right" src="images/Shape_9.svg" alt=""></h5>
+                    <p class="text">
+                        Delivery Area: European Union and Ukraine
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   <!-- FOOTER -->
+   <footer>
+    <div class="container p-0">
+        <div class="row m-0 p-0">
+            <div>
+                <div class="position-relative d-flex align-middle">
+                    <img class="position-relative" src="images/Rectangle_10.png" alt="">
+                    <img class="logo_above" src="images/Layer_18.png" alt="">
+                    <p class="slogan title">FORTITUDINE <br> ET CONSTANTIA</p>
+                </div>
+            </div>
+            <div class="col m-md-5 d-md-flex">
+                <div class="col-md col-12">
+                    <div>
+                        <h5 class="title"> Our address</h5>
+                        <p class="text"> Schottenring 16/2, Regus Stock Exchange,
+                            1010 Vienna
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md col-12">
+                    <div>
+                        <h5 class="title"> Hotline </h5>
+                        <p class="text">
+                            pavlo.chavdar@adlerenergy.at
+                            9:00 to 18:00 (without days off)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text col-md col-12">
+                    © 2015-2019 adlerenergy.at All rights reserved
+                    Developed by webcase studio
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+    <!-- ------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------------------------- -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js">
+    </script>
+    <!-- Slick slider -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <!-- -------------------------------------------------------------------------------------------- -->
+
+
+
+    <!-- Header Slider -->
+    <script>
+        $(document).ready(function () {
+            $('.single_items').slick({
+                infinite: true,
+                autoplay: true,
+                speed: 600,
+                autoplaySpeed: 10000,
+                dots: true,
+                arrows: false,
+                dotsClass: 'slider_dots',
+                appendDots: $('.custom_slider_dots'),
+                pauseOnFocus: false,
+
+            });
+        });
+    </script>
+
+
+    <!-- PARTNERS SLIDER -->
+    <script>
+        $(document).ready(function () {
+            $('.multiple-items').slick({
+                infinite: true,
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                speed: 600,
+                prevArrow: '<span class="left_arrow" style="color: silver;"><span class="fas fa-arrow-left"></span></span>',
+                nextArrow: '<span class="right_arrow" style="color: silver"><span class="fas fa-arrow-right"></span></span>',
+                responsive: [{
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 4,
+                            arrows: false,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            arrows: false,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            arrows: false,
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+    <script>
+        var prev = 0;
+        var $window = $(window);
+        var nav = $('.navbar');
+
+        $window.on('scroll', function () {
+            var scrollTop = $window.scrollTop();
+            nav.toggleClass('hidden', scrollTop > prev);
+            prev = scrollTop;
+
+            if (scrollTop == 0) {
+                $('.navbar').removeClass('rgba-stylish-light').addClass('z-depth-0');
+            } else {
+                $('.navbar').addClass('rgba-stylish-light').removeClass('z-depth-0');
+            }
+        });
+    </script>
+</body>
